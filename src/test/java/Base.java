@@ -12,10 +12,10 @@ public class Base {
         DesiredCapabilities cap = new DesiredCapabilities();
         File appDir = new File("apk");
         File app =  new File(appDir, "ApiDemos-debug.apk");
-        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "HUAWEI P30 Lite");
+        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Samsung S9+");
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        cap.setCapability(MobileCapabilityType.UDID, "8RBDU19325003729");
+        cap.setCapability(MobileCapabilityType.UDID, "2220c33e10037ece");
 
         AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         return driver;
