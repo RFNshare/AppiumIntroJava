@@ -14,7 +14,10 @@ public class Main extends Base {
         driver.findElementByXPath("//android.widget.TextView[@text='3. Preference dependencies']").click();
         driver.findElementById("android:id/checkbox").click();
 //        driver.findElementByXPath("//android.widget.TextView[@text='WiFi settings']").click();
+
         driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
+        System.out.println(driver.findElementsByClassName("//android.widget.RelativeLayout").size());;
+
         driver.findElementByClassName("android.widget.EditText").sendKeys("Hello");
 //        driver.findElementById("android:id/button1").click();
         driver.findElementsByClassName("android.widget.Button").get(1).click();

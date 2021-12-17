@@ -15,7 +15,7 @@ public class Base {
         cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Samsung S9+");
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        cap.setCapability(MobileCapabilityType.UDID, "2220c33e10037ece");
+        cap.setCapability(MobileCapabilityType.UDID, "8RBDU19325003729");
 
         AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         return driver;
