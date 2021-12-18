@@ -9,8 +9,13 @@ public class UiAutomatorTest extends Base {
         AndroidDriver<AndroidElement> driver = capabilities();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
+//        driver.findElementByAndroidUIAutomator("att(val)").click();
         driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
-        System.out.println(driver.findElementsByAndroidUIAutomator("new UiSelector().clickable(true)").size());
+//        driver.findElementByAndroidUIAutomator("text(\"Animation\")").click();
+//        driver.findElementByAndroidUIAutomator("text(\"Views\")").click();
+//        System.out.println(driver.findElementsByAndroidUIAutomator("new UiSelector().clickable(true)").size());
+        driver.findElementsByAndroidUIAutomator("new UiSelector().clickable(true)").get(1).click();
+        System.out.println(driver.findElementsByAndroidUIAutomator("new UiSelector().clickable(true)").size());;
     }
 }
 
